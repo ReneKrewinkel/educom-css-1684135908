@@ -1,0 +1,164 @@
+:root {
+
+    /* FONTS */
+    --regular: "Arial";
+
+    /* COLORS */
+    --dark-brown: #402214;
+    --lighter-brown:  #774231;
+    --lightest-brown: #aa4b1b;
+
+    --darker-red: #b31714;
+    --lighter-red: #dc3439;
+
+    --white: #FFF;
+    --black: #000;
+
+}
+
+.coolDiv{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(green, blue);
+}
+
+/*example of changing something from the core (Exercise #4) */
+body{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: small;
+}
+
+/*Exercise #5*/
+.inheritance-parent{
+    font-style: italic;
+    color: white;
+    width: 200px;
+    height: 200px;
+}
+
+.inheritance-child{
+    background-color: red;
+}
+
+/*Exercise #6*/
+
+.modified h2{
+    color: blue;
+}
+
+.modified a{
+    color: turquoise;
+}
+
+/* Exercise #7 */
+
+.color-part{
+    background-color: cornflowerblue;
+}
+
+.style-part{
+    border: 6px black;
+    border-style: double;
+}
+
+/* Excercise #8 */
+
+.icons{
+    transition: all .5s ease-out; 
+    color: darkgoldenrod;
+    left: 60px;
+}
+
+.icons:hover{
+    transform: scale(1.1); 
+}
+
+/* Exercise #9 */
+
+.variable{
+ color: var(--lightest-brown);
+}
+
+
+/* Exercise #10*/
+
+.coolButton{
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    padding-top: 1px;
+    box-shadow: 2px 2px black;
+}
+
+.coolButton:hover{
+    background-color: white;
+    color: red;
+}
+
+/* Exercise #11 */
+
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-trigger {
+    background-color: rgb(66, 66, 109);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 5000 !important;
+}
+
+.menu-trigger:hover {
+    background-color: #3c303d;
+}
+
+.menu-trigger:hover .dropdown {
+    left: 0;
+}
+
+.dropdown {
+    position: fixed;
+    top: 0;
+    left: -400px;
+    width: 200px;
+    height: 100vh;
+    background-color: #3c303d;
+    transition: all 0.4s ease;
+    padding: 40px;
+}
+
+/* Exercise #12 */
+
+.navigation{
+    background-color: #3c303d;
+    color: #FFF;
+    padding: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #b31714;
+    color: antiquewhite;
+}
+
+.content div{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background-color: #402214;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: green;
+}
